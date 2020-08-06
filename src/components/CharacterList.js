@@ -1,5 +1,5 @@
 import React from 'react';
-import CharacterCard from './CharacterCard.js';
+import CharacterCard from './CharacterCard';
 
 function CharacterList() {
     return (
