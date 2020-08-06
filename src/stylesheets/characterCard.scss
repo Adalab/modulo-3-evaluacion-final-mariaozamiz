@@ -1,0 +1,19 @@
+.character-card {
+    border: 1px solid purple;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.character-info {
+    &__name {
+    }
+    &__species {
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import headerLogo from '../images/rick-and-morty-logo.png';
+import logo from '../images/rick-and-morty-logo.png';
+import '../stylesheets/header.scss';
 
 function Header() {
     return (
@@ -8,12 +9,12 @@ function Header() {
             <div className="header-logo">
                 <img
                     className="logo"
-                    src={headerLogo}
+                    src={logo}
                     alt="rick and morty logo"
                 ></img>
             </div>
             <form>
-                <label forHtml="search-input">
+                <label htmlFor="search-input">
                     Find a character!
                     <input
                         id="search-input"
