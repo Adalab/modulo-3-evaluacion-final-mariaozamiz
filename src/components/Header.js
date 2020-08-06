@@ -5,7 +5,6 @@ import '../stylesheets/header.scss';
 function Header() {
     return (
         <header className="header">
-            Soy una cabecera
             <div className="header-logo">
                 <img
                     className="logo"

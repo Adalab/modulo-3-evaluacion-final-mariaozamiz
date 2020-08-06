@@ -6,7 +6,6 @@ import '../stylesheets/characterList.scss';
 function CharacterList() {
     return (
         <div className="character-list">
-            Soy un listado de personajes
             <CharacterCard
                 id={1}
                 imageUrl={defaultImage}
