@@ -1,22 +1,25 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
-import defaultImage from '../images/rick.jpg';
 import '../stylesheets/characterList.scss';
 
-function CharacterList() {
-    return (
-        <div className="character-list">
-            <CharacterCard
-                id={1}
-                imageUrl={defaultImage}
-                name="Rick"
-                species="Human"
-                origin="Planet Earth"
-                status="Alive"
-                episodes={6}
-            />
-        </div>
-    );
+function CharacterList(props) {
+    console.log(props);
+    const charactersInfo = props.characters.map((character) => {
+        return (
+            <li key={character.id} className="character-card">
+                <CharacterCard
+                    id={character.id}
+                    imageUrl={character.imageUrl}
+                    name={character.name}
+                    species={character.species}
+                    origin={character.origin}
+                    status={character.status}
+                    episodes={character.episodes.length}
+                />
+            </li>
+        );
+    });
+    return <ul className="character-list">{charactersInfo}</ul>;
 }
 
 export default CharacterList;

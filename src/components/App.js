@@ -11,8 +11,7 @@ function App() {
             console.log(data);
             setCharacters(data);
         });
-    });
-
+    }, []);
     return (
         <div className="App">
             <Header />
