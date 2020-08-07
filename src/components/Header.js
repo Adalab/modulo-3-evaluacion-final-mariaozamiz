@@ -12,17 +12,6 @@ function Header() {
                     alt="rick and morty logo"
                 ></img>
             </div>
-            <form>
-                <label htmlFor="search-input">
-                    Find a character!
-                    <input
-                        id="search-input"
-                        name="search-input"
-                        type="text"
-                        placeholder="for example, 'Rick'"
-                    ></input>
-                </label>
-            </form>
         </header>
     );
 }
