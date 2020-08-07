@@ -5,7 +5,10 @@ import '../stylesheets/characterCard.scss';
 function CharacterCard(props) {
     return (
         <>
-            <Link to={`/character/${props.id}`}>
+            <Link
+                to={`/character/${props.id}`}
+                style={{ textDecoration: 'none' }}
+            >
                 <img
                     className="character-card__image"
                     src={props.imageUrl}
