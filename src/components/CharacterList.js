@@ -10,10 +10,10 @@ function CharacterList(props) {
                     id={character.id}
                     imageUrl={character.imageUrl}
                     name={character.name}
-                    species={character.species}
-                    origin={character.origin}
-                    status={character.status}
-                    episodes={character.episodes.length}
+                    // species={character.species}
+                    // origin={character.origin}
+                    // status={character.status}
+                    // episodes={character.episodes.length}
                 />
             </li>
         );
