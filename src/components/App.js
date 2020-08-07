@@ -7,7 +7,7 @@ import '../stylesheets/app.scss';
 
 function App() {
     const [characters, setCharacters] = useState([]);
-    const [filter, setFilter] = useState('');
+    const [filterName, setFilterName] = useState('');
     useEffect(() => {
         getDataFromApi().then((data) => {
             setCharacters(data);
@@ -17,15 +17,19 @@ function App() {
     const handleFilter = (filterObject) => {
         console.log('manejando los filtros:', filterObject);
         if (filterObject.kind === 'name') {
-            setFilter(filterObject.value);
+            setFilterName(filterObject.value);
         }
     };
+
+    const filteredCharacters = characters.filter((character) => {
+        return character.name.toUpperCase().includes(filterName.toUpperCase());
+    });
 
     return (
         <div className="App">
             <Header />
             <Filters handleFilter={handleFilter} />
-            <CharacterList characters={characters} />
+            <CharacterList characters={filteredCharacters} />
         </div>
     );
 }
