@@ -4,7 +4,6 @@ import '../stylesheets/characterList.scss';
 
 function CharacterList(props) {
     if (props.characters.length === 0) {
-        console.log('no hay coincidencias');
         return <p>Character not found, try again!</p>;
     }
 
