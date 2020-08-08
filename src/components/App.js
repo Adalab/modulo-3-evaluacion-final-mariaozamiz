@@ -43,7 +43,11 @@ function App() {
             <Filters handleFilter={handleFilter} />
             <CharacterList characters={filteredCharacters} />
             <Switch>
-                <Route path="/character/:id" render={renderCharacterDetail} />
+                <Route
+                    exact
+                    path="/character/:id"
+                    render={renderCharacterDetail}
+                />
             </Switch>
         </div>
     );

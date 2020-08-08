@@ -3,6 +3,11 @@ import CharacterCard from './CharacterCard';
 import '../stylesheets/characterList.scss';
 
 function CharacterList(props) {
+    if (props.characters.length === 0) {
+        console.log('no hay coincidencias');
+        return <p>Character not found, try again!</p>;
+    }
+
     const charactersInfo = props.characters.map((character) => {
         return (
             <li key={character.id} className="character-card">

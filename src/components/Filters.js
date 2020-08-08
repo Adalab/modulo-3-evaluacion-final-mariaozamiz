@@ -1,5 +1,5 @@
 import React from 'react';
-import FilterName from './FilterByName';
+import FilterByName from './FilterByName';
 import '../stylesheets/filter.scss';
 
 function Filters(props) {
@@ -11,9 +11,18 @@ function Filters(props) {
         });
     };
 
+    const handleKeyPress = (ev) => {
+        if (ev.key === 'Enter') {
+            ev.preventDefault();
+        }
+    };
+
     return (
         <form className="form">
-            <FilterName handleChange={handleChange} />
+            <FilterByName
+                handleChange={handleChange}
+                handleKeyPress={handleKeyPress}
+            />
         </form>
     );
 }

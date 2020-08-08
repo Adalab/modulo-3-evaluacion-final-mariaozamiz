@@ -11,6 +11,7 @@ function FilterByName(props) {
                 type="text"
                 placeholder="for example, 'Rick'"
                 onKeyUp={props.handleChange}
+                onKeyPress={props.handleKeyPress}
             ></input>
         </label>
     );

@@ -1,4 +1,23 @@
-.modal {
+.modal__overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #cccc;
+}
+
+.modal__dialog {
+    //position
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+    //style
+    width: 600px;
+    max-width: 100%;
     border: 2px solid black;
     border-radius: 5px;
     background-color: #00b1c8;
@@ -6,11 +25,6 @@
     //gradient  #ddfc44 (amarillo)
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
 }
 
 .modal__content {
