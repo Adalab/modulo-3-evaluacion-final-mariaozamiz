@@ -35,7 +35,16 @@ function App() {
             return character.id === parseInt(characterId);
         });
         if (foundCharacter !== undefined) {
-            return <CharacterDetail character={foundCharacter} />;
+            return (
+                <CharacterDetail
+                    id={foundCharacter.id}
+                    imageUrl={foundCharacter.imageUrl}
+                    name={foundCharacter.name}
+                    status={foundCharacter.status}
+                    species={foundCharacter.species}
+                    episodes={foundCharacter.episodes.length}
+                />
+            );
         }
     };
 
