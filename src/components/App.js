@@ -10,6 +10,7 @@ import '../stylesheets/app.scss';
 function App() {
     const [characters, setCharacters] = useState([]);
     const [filterName, setFilterName] = useState('');
+
     useEffect(() => {
         getDataFromApi().then((data) => {
             setCharacters(data);
@@ -20,6 +21,7 @@ function App() {
         console.log('manejando los filtros:', filterObject);
         if (filterObject.kind === 'name') {
             setFilterName(filterObject.value);
+            localStorage.setItem('search', filterObject.value);
         }
     };
 
