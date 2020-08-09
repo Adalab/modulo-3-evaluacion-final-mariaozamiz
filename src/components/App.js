@@ -5,6 +5,7 @@ import Filters from './Filters';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 import getDataFromApi from '../services/getDataFromApi';
+import CharacterNotFound from './CharacterNotFound';
 import '../stylesheets/app.scss';
 
 function App() {
@@ -36,6 +37,12 @@ function App() {
         });
         if (foundCharacter !== undefined) {
             return <CharacterDetail character={foundCharacter} />;
+        }
+        const unfoundCharacter = characters.find((character) => {
+            return character.id !== parseInt(characterId);
+        });
+        if (unfoundCharacter) {
+            return <CharacterNotFound />;
         }
     };
 

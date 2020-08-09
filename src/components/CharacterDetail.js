@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import close from '../images/window-close-solid.svg';
 import Icon from './Icon';
 import '../stylesheets/characterDetail.scss';
-import { checkPropTypes } from 'prop-types';
 
 function CharacterDetail(props) {
     return (
@@ -22,7 +21,7 @@ function CharacterDetail(props) {
                     <img
                         className="modal__content-image"
                         src={props.character.imageUrl}
-                        alt={`${props.character.name}´s image`}
+                        alt={`${props.character.name}´s pic`}
                     ></img>
                     <ul className="modal__content-list">
                         <li className="modal__list-name">
