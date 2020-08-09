@@ -1,0 +1,10 @@
+@import './app';
+
+.form {
+    display: flex;
+    margin: 20px 15px 30px 15px;
+
+    @include tablet {
+        flex-direction: column;
+    }
+}

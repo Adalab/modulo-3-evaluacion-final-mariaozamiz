@@ -16,6 +16,11 @@
     margin: 0 auto;
 
     @include tablet {
+        width: 489px;
+        height: 174px;
+    }
+
+    @include desktop {
         width: 652px;
         height: 232px;
     }

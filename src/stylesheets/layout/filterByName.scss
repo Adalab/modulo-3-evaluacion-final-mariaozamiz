@@ -1,1 +1,34 @@
 @import './app';
+
+.text-imput {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.text-input__label {
+    font-family: $font-basic;
+    font-weight: $bold;
+    color: $color-primary;
+    font-size: $s;
+
+    @include tablet {
+        font-size: $l;
+    }
+}
+
+.text-input__field {
+    &::placeholder {
+        font-family: $font-basic;
+        color: $color-medium;
+        padding: 5px 3px;
+        font-size: $xs;
+
+        @include tablet {
+            font-size: $m;
+        }
+    }
+    border: 2px solid $color-primary;
+    border-radius: 3px;
+    margin-left: 10px;
+}
