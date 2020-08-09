@@ -7,18 +7,20 @@ function CharacterList(props) {
         return <p>Character not found, try again!</p>;
     }
 
-    const charactersInfo = props.characters.map((character) => {
-        return (
-            <li key={character.id} className="character-card">
-                <CharacterCard
-                    id={character.id}
-                    imageUrl={character.imageUrl}
-                    name={character.name}
-                    species={character.species}
-                />
-            </li>
-        );
-    });
+    const charactersInfo = props.characters
+        .sort((a, b) => (a.name > b.name ? 1 : -1))
+        .map((character) => {
+            return (
+                <li key={character.id} className="character-card">
+                    <CharacterCard
+                        id={character.id}
+                        imageUrl={character.imageUrl}
+                        name={character.name}
+                        species={character.species}
+                    />
+                </li>
+            );
+        });
     return <ul className="character-list">{charactersInfo}</ul>;
 }
 
