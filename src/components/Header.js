@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../images/rick-and-morty-logo.png';
-import '../stylesheets/header.scss';
+import '../stylesheets/layout/header.scss';
 
 function Header() {
     return (

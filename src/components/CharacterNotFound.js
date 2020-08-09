@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import close from '../images/window-close-solid.svg';
-import '../stylesheets/characterDetail.scss';
+import '../stylesheets/layout/characterNotFound.scss';
 
 function CharacterNotFound(props) {
     return (

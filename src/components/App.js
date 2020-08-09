@@ -6,7 +6,7 @@ import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 import getDataFromApi from '../services/getDataFromApi';
 import CharacterNotFound from './CharacterNotFound';
-import '../stylesheets/app.scss';
+import '../stylesheets/layout/app.scss';
 
 function App() {
     const [characters, setCharacters] = useState([]);

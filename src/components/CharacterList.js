@@ -1,6 +1,6 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
-import '../stylesheets/characterList.scss';
+import '../stylesheets/layout/characterList.scss';
 
 function CharacterList(props) {
     if (props.characters.length === 0) {

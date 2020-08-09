@@ -4,8 +4,9 @@ import alive from '../images/heartbeat-solid.svg';
 import unknown from '../images/question-circle-solid.svg';
 import human from '../images/user-circle-solid.svg';
 import alien from '../images/reddit-alien-brands.svg';
+import '../stylesheets/layout/icons.scss';
 
-function Icon(props) {
+function Icons(props) {
     const statusIcon = () => {
         if (props.status === 'Dead') {
             return dead;
@@ -35,4 +36,4 @@ function Icon(props) {
     );
 }
 
-export default Icon;
+export default Icons;
