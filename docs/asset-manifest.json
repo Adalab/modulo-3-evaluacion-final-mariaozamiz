@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.11885c2d.chunk.css",
+    "main.js": "/static/js/main.9a2d542c.chunk.js",
+    "main.js.map": "/static/js/main.9a2d542c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.40fd9fda.js",
+    "runtime-main.js.map": "/static/js/runtime-main.40fd9fda.js.map",
+    "static/js/2.f21ac4d1.chunk.js": "/static/js/2.f21ac4d1.chunk.js",
+    "static/js/2.f21ac4d1.chunk.js.map": "/static/js/2.f21ac4d1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dd9273dd9bdce78f3000cbc44edc7120.js": "/precache-manifest.dd9273dd9bdce78f3000cbc44edc7120.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.11885c2d.chunk.css.map": "/static/css/main.11885c2d.chunk.css.map",
+    "static/js/2.f21ac4d1.chunk.js.LICENSE.txt": "/static/js/2.f21ac4d1.chunk.js.LICENSE.txt",
+    "static/media/heartbeat-solid.svg": "/static/media/heartbeat-solid.ee3b81c9.svg",
+    "static/media/question-circle-solid.svg": "/static/media/question-circle-solid.4485f886.svg",
+    "static/media/reddit-alien-brands.svg": "/static/media/reddit-alien-brands.422193e5.svg",
+    "static/media/rick-and-morty-logo.png": "/static/media/rick-and-morty-logo.75509f2e.png",
+    "static/media/skull-solid.svg": "/static/media/skull-solid.63c8b224.svg",
+    "static/media/user-circle-solid.svg": "/static/media/user-circle-solid.c3580913.svg",
+    "static/media/window-close-solid.svg": "/static/media/window-close-solid.b1f2a762.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40fd9fda.js",
+    "static/js/2.f21ac4d1.chunk.js",
+    "static/css/main.11885c2d.chunk.css",
+    "static/js/main.9a2d542c.chunk.js"
+  ]
+}

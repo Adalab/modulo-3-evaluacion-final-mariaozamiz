@@ -14,7 +14,7 @@ function FilterByName(props) {
                     placeholder="for example, 'Rick'"
                     onKeyUp={props.handleChange}
                     onKeyPress={props.handleKeyPress}
-                    inputValue={props.filterName}
+                    defaultValue={props.filterName}
                 ></input>
             </label>
         </div>
