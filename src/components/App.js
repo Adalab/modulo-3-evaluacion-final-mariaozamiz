@@ -49,15 +49,17 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <Filters handleFilter={handleFilter} />
-            <CharacterList characters={filteredCharacters} />
-            <Switch>
-                <Route
-                    exact
-                    path="/character/:id"
-                    render={renderCharacterDetail}
-                />
-            </Switch>
+            <main className="main">
+                <Filters handleFilter={handleFilter} />
+                <CharacterList characters={filteredCharacters} />
+                <Switch>
+                    <Route
+                        exact
+                        path="/character/:id"
+                        render={renderCharacterDetail}
+                    />
+                </Switch>
+            </main>
         </div>
     );
 }

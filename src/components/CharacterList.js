@@ -4,7 +4,11 @@ import '../stylesheets/layout/characterList.scss';
 
 function CharacterList(props) {
     if (props.characters.length === 0) {
-        return <p>Character not found, try again!</p>;
+        return (
+            <div className="not-found__message">
+                <p>Character not found, try again!</p>
+            </div>
+        );
     }
 
     const charactersInfo = props.characters

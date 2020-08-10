@@ -18,10 +18,18 @@
 }
 
 .text-input__field {
+    font-family: $font-basic;
+    color: $color-dark;
+    padding: 5px 5px;
+    font-size: $xs;
+
+    @include tablet {
+        font-size: $m;
+    }
     &::placeholder {
         font-family: $font-basic;
         color: $color-medium;
-        padding: 5px 3px;
+        padding: 5px 5px;
         font-size: $xs;
 
         @include tablet {
