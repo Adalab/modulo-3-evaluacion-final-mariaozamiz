@@ -4,7 +4,6 @@ import '../stylesheets/layout/filters.scss';
 
 function Filters(props) {
     const handleChange = (ev) => {
-        console.log(`se recoge del input: ${ev.target.value}`);
         props.handleFilter({
             kind: 'name',
             value: ev.target.value,
@@ -22,6 +21,7 @@ function Filters(props) {
             <FilterByName
                 handleChange={handleChange}
                 handleKeyPress={handleKeyPress}
+                filterName={props.filterName}
             />
         </form>
     );

@@ -22,7 +22,6 @@ function App() {
         console.log('manejando los filtros:', filterObject);
         if (filterObject.kind === 'name') {
             setFilterName(filterObject.value);
-            localStorage.setItem('search', filterObject.value);
         }
     };
 
@@ -50,7 +49,7 @@ function App() {
         <div className="App">
             <Header />
             <main className="main">
-                <Filters handleFilter={handleFilter} />
+                <Filters handleFilter={handleFilter} filterName={filterName} />
                 <CharacterList characters={filteredCharacters} />
                 <Switch>
                     <Route
