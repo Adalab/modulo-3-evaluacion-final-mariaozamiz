@@ -6,39 +6,48 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #cccc;
+    background-color: $color-medium;
 }
 
 .modal__dialog {
     //position
     position: fixed;
+    z-index: 1;
     top: 50%;
     left: 50%;
-    z-index: 1;
     transform: translate(-50%, -50%);
 
     //style
-    width: 600px;
+    width: 70vw;
     max-width: 100%;
-    border: 2px solid black;
+    border: 0.5px solid $color-dark;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 3px 2px #85c87f;
-    //gradient  #ddfc44 (amarillo)
+    box-shadow: $shadow-modal;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 5px;
+
+    @include tablet {
+        width: 600px;
+    }
 }
 
+.modal__button-close {
+    width: 30px;
+    height: 30px;
+}
 .modal__content {
     display: flex;
     flex-direction: row;
 
     &-image {
-        width: 50%;
+        transform: scale(0.9);
     }
 
     &-list {
+        padding-left: 20px;
+        font-family: $font-basic;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -51,13 +60,5 @@
     font-weight: 600;
     color: #00b1c8;
     font-size: 22px;
-}
-
-.modal__button-close {
-    width: 30px;
-    height: 30px;
-    align-self: right;
-    position: absolute;
-    left: 555px;
-    top: 8px;
+    margin-bottom: 10px;
 }

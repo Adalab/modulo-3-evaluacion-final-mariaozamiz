@@ -21,18 +21,18 @@ function Icons(props) {
         return props.species === 'Human' ? human : alien;
     };
     return (
-        <>
+        <div className="icons__nav">
             <img
-                className="modal__content-image"
-                alt={`${props.species}'s pic`}
-                src={speciesIcon()}
-            ></img>
-            <img
-                className="modal__content-image"
+                className="icons__nav-status"
                 alt={`${props.status}'s pic`}
                 src={statusIcon()}
             ></img>
-        </>
+            <img
+                className="icons__nav-species"
+                alt={`${props.species}'s pic`}
+                src={speciesIcon()}
+            ></img>
+        </div>
     );
 }
 
