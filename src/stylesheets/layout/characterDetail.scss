@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: $color-medium;
+    background-color: #cccc;
 }
 
 .modal__dialog {
@@ -19,10 +19,10 @@
 
     //style
     width: 70vw;
-    max-width: 100%;
-    border: 0.5px solid $color-dark;
+    max-width: 70%;
+    border: 0.5px solid $color-secondary;
     border-radius: 5px;
-    background-color: aqua;
+    background-color: $color-light;
     box-shadow: $shadow-modal;
     display: flex;
     flex-direction: column;
@@ -30,6 +30,7 @@
 
     @include tablet {
         width: 600px;
+        max-width: 100%;
     }
 }
 
@@ -39,10 +40,17 @@
 }
 .modal__content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: row;
+    }
 
     &-image {
-        transform: scale(0.9);
+        @include tablet {
+            transform: scale(0.9);
+        }
     }
 
     &-list {
@@ -63,4 +71,15 @@
     color: $color-primary;
     font-size: 30px;
     margin-bottom: 10px;
+}
+
+.modal__button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.modal__button-close {
+    width: 20px;
+    height: 20px;
 }
