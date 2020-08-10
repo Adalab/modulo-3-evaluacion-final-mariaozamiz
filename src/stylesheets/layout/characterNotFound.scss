@@ -1,6 +1,6 @@
 @import './app';
 
-.modal__overlay {
+.modalnf__overlay {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -9,7 +9,7 @@
     background-color: #cccc;
 }
 
-.modal__dialog {
+.modalnf__dialog {
     //position
     position: fixed;
     top: 50%;
@@ -18,46 +18,40 @@
     transform: translate(-50%, -50%);
 
     //style
-    width: 600px;
-    max-width: 100%;
-    border: 2px solid black;
+    width: 300px;
+    max-width: 70%;
+    border: 1px solid black;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 3px 2px #85c87f;
-    //gradient  #ddfc44 (amarillo)
+    box-shadow: $shadow-card;
     display: flex;
     flex-direction: column;
     padding: 15px;
+    text-align: center;
+
+    @include tablet {
+        width: 400px;
+        max-width: 100%;
+    }
 }
 
-.modal__content {
+.modalnf__button {
     display: flex;
-    flex-direction: row;
-
-    &-image {
-        width: 50%;
-    }
-
-    &-list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
+    justify-content: flex-end;
 }
 
-.modal__list-name {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    color: #00b1c8;
-    font-size: 22px;
+.modalnf__button-close {
+    width: 20px;
+    height: 20px;
 }
 
-.modal__button-close {
-    width: 30px;
-    height: 30px;
-    align-self: right;
-    position: absolute;
-    left: 555px;
-    top: 8px;
+.modalnf__content h1 {
+    font-family: $font-emphatic;
+    font-size: $xl;
+    color: $color-primary;
+    font-weight: $regular;
+
+    @include tablet {
+        font-size: $xl;
+    }
 }

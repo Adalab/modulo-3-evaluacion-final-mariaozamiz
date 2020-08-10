@@ -5,22 +5,22 @@ import '../stylesheets/layout/characterNotFound.scss';
 
 function CharacterNotFound(props) {
     return (
-        <div className="modal">
-            <div className="modal__dialog">
-                <div className="modal__button">
+        <div className="modalnf">
+            <div className="modalnf__dialog">
+                <div className="modalnf__button">
                     <Link to="/">
                         <img
-                            className="modal__button-close"
+                            className="modalnf__button-close"
                             src={close}
                             alt="close icon"
                         ></img>
                     </Link>
                 </div>
-                <div className="modal__content">
+                <div className="modalnf__content">
                     <h1>Character not found</h1>
                 </div>
             </div>
-            <div className="modal__overlay"></div>
+            <div className="modalnf__overlay"></div>
         </div>
     );
 }
