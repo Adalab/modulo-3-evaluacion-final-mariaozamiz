@@ -20,7 +20,7 @@
     }
 
     &__info {
-        padding: 10px;
+        padding: 15px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -30,16 +30,16 @@
     &__name {
         font-family: $font-basic;
         color: $color-light;
-        font-size: $s;
+        font-size: $m;
 
         @include tablet {
-            font-size: $l;
+            font-size: $xl;
         }
     }
 
     &__species {
         font-family: $font-emphatic;
-        color: $color-light;
+        color: $color-tertiary;
         font-size: $xs;
         margin-top: 0px;
 
