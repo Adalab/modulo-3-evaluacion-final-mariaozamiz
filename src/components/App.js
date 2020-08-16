@@ -11,6 +11,7 @@ import '../stylesheets/layout/app.scss';
 function App() {
     const [characters, setCharacters] = useState([]);
     const [filterName, setFilterName] = useState('');
+    const [filterSpecies, setFilterSpecies] = useState([]);
 
     useEffect(() => {
         getDataFromApi().then((data) => {
@@ -19,7 +20,6 @@ function App() {
     }, []);
 
     const handleFilter = (filterObject) => {
-        console.log('manejando los filtros:', filterObject);
         if (filterObject.kind === 'name') {
             setFilterName(filterObject.value);
         }
@@ -36,11 +36,7 @@ function App() {
         });
         if (foundCharacter !== undefined) {
             return <CharacterDetail character={foundCharacter} />;
-        }
-        const unfoundCharacter = characters.find((character) => {
-            return character.id !== parseInt(characterId);
-        });
-        if (unfoundCharacter) {
+        } else {
             return <CharacterNotFound />;
         }
     };
