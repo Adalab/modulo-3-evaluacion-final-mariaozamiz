@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Header from './Header';
-import Filters from './Filters';
-import CharacterList from './CharacterList';
-import CharacterDetail from './CharacterDetail';
-import getDataFromApi from '../services/getDataFromApi';
-import CharacterNotFound from './CharacterNotFound';
-import '../stylesheets/layout/app.scss';
+import Header from './components/header/Header';
+import Filters from './components/filters/Filters';
+import CharacterList from './components/characterList/CharacterList';
+import CharacterDetail from './components/characterDetail/CharacterDetail';
+import CharacterNotFound from './components/characterNotFound/CharacterNotFound';
+import getDataFromApi from './services/getDataFromApi';
+import './app.scss';
 
 function App() {
     const [characters, setCharacters] = useState([]);

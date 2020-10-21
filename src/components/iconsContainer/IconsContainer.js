@@ -1,10 +1,10 @@
 import React from 'react';
-import dead from '../images/skull-solid.svg';
-import alive from '../images/heartbeat-solid.svg';
-import unknown from '../images/question-circle-solid.svg';
-import human from '../images/user-circle-solid.svg';
-import alien from '../images/reddit-alien-brands.svg';
-import '../stylesheets/layout/icons.scss';
+import dead from '../../images/skull-solid.svg';
+import alive from '../../images/heartbeat-solid.svg';
+import unknown from '../../images/question-circle-solid.svg';
+import human from '../../images/user-circle-solid.svg';
+import alien from '../../images/reddit-alien-brands.svg';
+import './iconsContainer.scss';
 
 function Icons(props) {
     const statusIcon = () => {

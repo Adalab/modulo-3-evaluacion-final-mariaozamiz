@@ -1,6 +1,6 @@
 import React from 'react';
-import FilterByName from './FilterByName';
-import '../stylesheets/layout/filters.scss';
+import FilterByName from './filterByName/FilterByName';
+import './filters.scss';
 
 function Filters(props) {
     const handleChange = (ev) => {

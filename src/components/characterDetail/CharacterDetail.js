@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import close from '../images/window-close-solid.svg';
-import Icon from './Icons';
-import '../stylesheets/layout/characterDetail.scss';
+import close from '../../images/window-close-solid.svg';
+import Icon from '../iconsContainer/IconsContainer';
+import './characterDetail.scss';
 
 function CharacterDetail(props) {
     return (

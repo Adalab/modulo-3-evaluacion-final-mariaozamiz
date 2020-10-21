@@ -1,5 +1,5 @@
 import React from 'react';
-import '../stylesheets/layout/filterByName.scss';
+import './filterByName.scss';
 
 function FilterByName(props) {
     return (
