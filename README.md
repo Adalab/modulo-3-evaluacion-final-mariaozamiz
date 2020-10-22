@@ -8,12 +8,12 @@ _Wubba Lubba Dub Dub!_
 
 
 
-## Tecnologías utilizadas ⚙️
+## Tecnologías utilizadas
 
 - React (hooks, router) y CSS (Sass).
-- ⚠️ El proyecto aún no está adaptada a dispositivos móviles
+- ⚠️ El proyecto aún no está adaptada a dispositivos móviles.
 
-## Características generales 📋
+## Características generales
 
 -  La página muestra los veinte primeros personajes de la [rickandmortyapi](https://rickandmortyapi.com/documentation/#get-all-characters) con su información básica: imagen, nombre y especie.
 -  Es posible buscar más personajes de la serie a través del formulario.
@@ -30,10 +30,41 @@ _Wubba Lubba Dub Dub!_
 - La URL del detalle de personaje es compartible: si visitamos esa URL directamente en el navegador se mostrará el detalle del personaje.
 - Si naveguemos a una URL inexistente, saldrá el mensaje de aviso "Personaje no encontrado".
 
-
 ### Pintado de resultados 🥒
 
 -  Tanto el listado inicial de personajes como aquellos resultado de una búsqueda se presentan ordenados alfabéticamente.
+
+### API 📋
+
+- Una segunda API actúa como respaldo por si la primera fallase.
+- Los datos necesarios tienen un primer filtrado en este paso y se ordenan alfabéticamente.
+
+```
+const getDataFromApi = () => {
+    return fetch('https://rickandmortyapi.com/api/character/')
+        .catch(() => {
+            return fetch(
+                'https://raw.githubusercontent.com/Adalab/rick-y-morty/master/data/rick-y-morty.json'
+            );
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            return data.results
+                .sort((a, b) => (a.name > b.name ? 1 : -1))
+                .map((character) => {
+                    return {
+                        id: character.id,
+                        imageUrl: character.image,
+                        name: character.name,
+                        species: character.species,
+                        origin: character.origin,
+                        status: character.status,
+                        episodes: character.episode,
+                    };
+                });
+        });
+};
+´´´
 
 
 ## Instalación 🔧
