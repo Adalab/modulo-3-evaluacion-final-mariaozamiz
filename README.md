@@ -13,7 +13,7 @@ _Wubba Lubba Dub Dub!_
 2. Instala las dependencias con ```npm install```.
 3. Arranca el proyecto con ```npm start```.
    
-   
+
 ## Tecnologías utilizadas
 
 - React (hooks, router) y CSS (Sass).
@@ -70,4 +70,3 @@ const getDataFromApi = () => {
                 });
         });
 };
-´´´
