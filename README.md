@@ -63,8 +63,7 @@ const getDataFromApi = () => {
                     };
                 });
         });
-};
-´´´
+};´´´
 
 
 ## Instalación 🔧
