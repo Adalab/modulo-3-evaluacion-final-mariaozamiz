@@ -1,20 +1,35 @@
 # Rick and Morty's Character Cards
 
-_Proyecto final de módulo React, en el que el objetivo es desarrollar una página web con un listado de personajes de la serie "Rick y Morty", que podremos filtrar por el nombre del personaje._
+Esta aplicación web muestra un listado de personajes de la serie de animación Rick & Morty, permite hacer búsquedas por nombre y ampliar información de cada personaje clicando en su tarjeta. _Wubba Lubba Dub Dub!_
 
-## Requisitos 📋
+## Tecnologías utilizadas ⚙️
 
--   Solicitar datos al API (https://rickandmortyapi.com/documentation/#get-all-characters) para pintar un listado de personajes con la siguiente información:
+Este proyecto ha sido realizado con React (hooks, router) y CSS (Sass). 
 
-1.  Foto
-2.  Nombre
-3.  Especie
+## Características generales 📋
 
--   Filtrar personajes a través de un formulario de búsqueda en el que no se tengan en cuenta mayúsculas o minúsculas.
--   Al hacer click sobre un personaje se expandirá su información completa. Para ello utilizaremos rutas y React router.
--   En la pantalla de detalle aparecerá además de la foto, nombre y especie, el planeta de origen, el número de episodios en los que aparece y si está vivo o muerto.
--   Si estando en el campo de filtrado pulsamos intro debéis impedir que el navegador navegue o cambie la ruta sin querer.
--   Si se busca por un texto por ejemplo "XXX" y no hay ningún personaje que coincida con dicho texto se debe mostrar un mensaje del tipo "No hay ningún personaje que coincida con la palabra XXX".
--   Como ejercicio extra os proponemos que la URL del detalle de personaje sea compartible, es decir, que si visitamos esa URL directamente en el navegador se vea el detalle del personaje.
--   Y en el caso de que el usuario navegue a una URL inexistente como por ejemplo http://localhost:3000/#/detail/12345 (el id 12345 no existe) debemos mostrar un mensaje del tipo "El personaje que buscas no existe".
--   Un extra interesante sería que ordenáseis el listado de personajes alfabéticamente por nombre.
+-  La página muestra los veinte primeros personajes de la [rickandmortyapi](https://rickandmortyapi.com/documentation/#get-all-characters) con su información básica: imagen, nombre y especie
+-  Es posible buscar más personajes de la serie a través del formulario
+-  Al hacer click sobre un personaje se expande su información completa, incluyendo planeta de origen, número de episodios y status
+
+### Búsqueda 🔍
+
+- Al realizar una búsqueda no se tendrá en cuenta si la persona ha introducido el texto en mayúsculas o minúsculas
+- Si ningún personaje coincide con el texto de búsqueda, se mostrará un mensaje de aviso
+
+### Navegación 🏄
+
+- Situándonos en el campo de texto, el navegador no cambiará de ruta si se pulsa la tecla intro
+- La URL del detalle de personaje es compartible: si visitamos esa URL directamente en el navegador se mostrará el detalle del personaje.
+- Si naveguemos a una URL inexistente, saldrá el mensaje de aviso "Personaje no encontrado".
+
+### Pintado de resultados 🥒
+
+-  Tanto el listado inicial de personajes como aquellos resultado de una búsqueda se presentan ordenados alfabéticamente.
+
+
+## Instalación 🔧
+
+1. Descarga el repositorio
+2. Instala las dependencias con ```npm install```
+3. Arranca el proyecto con ```npm start```
