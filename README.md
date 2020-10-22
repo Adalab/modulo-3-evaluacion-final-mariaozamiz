@@ -7,7 +7,13 @@ _Wubba Lubba Dub Dub!_
 ![Captura de pantalla](https://github.com/mariaozamiz/rick-and-morty-character-cards/blob/master/src/images/rickymorty.jpg?raw=true)
 
 
+## Instalación 🔧
 
+1. Descarga el repositorio.
+2. Instala las dependencias con ```npm install```.
+3. Arranca el proyecto con ```npm start```.
+   
+   
 ## Tecnologías utilizadas
 
 - React (hooks, router) y CSS (Sass).
@@ -63,12 +69,5 @@ const getDataFromApi = () => {
                     };
                 });
         });
-};```
-
-
-## Instalación 🔧
-
-1. Descarga el repositorio.
-2. Instala las dependencias con ```npm install```.
-3. Arranca el proyecto con ```npm start```.
-4. _Wubba Lubba Dub Dub!_
+};
+´´´
