@@ -11,7 +11,7 @@ _Wubba Lubba Dub Dub!_
 ## Tecnologías utilizadas ⚙️
 
 - React (hooks, router) y CSS (Sass).
-⚠️ Esta página aún no está adaptada a dispositivos móviles
+Esta página aún no está adaptada a dispositivos móviles ⚠️ 
 
 ## Características generales 📋
 
