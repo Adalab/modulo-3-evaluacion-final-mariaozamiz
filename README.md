@@ -71,3 +71,4 @@ const getDataFromApi = () => {
 1. Descarga el repositorio.
 2. Instala las dependencias con ```npm install```.
 3. Arranca el proyecto con ```npm start```.
+4. _Wubba Lubba Dub Dub!_
