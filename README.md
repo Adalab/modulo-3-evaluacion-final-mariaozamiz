@@ -1,10 +1,15 @@
 # Rick and Morty's Character Cards
 
-Esta aplicación web muestra un listado de personajes de la serie de animación Rick & Morty, permite hacer búsquedas por nombre y ampliar información de cada personaje clicando en su tarjeta. _Wubba Lubba Dub Dub!_
+Esta aplicación web muestra un listado de personajes de la serie de animación Rick & Morty, permite hacer búsquedas por nombre y ampliar información de cada personaje clicando en su tarjeta. 
+_Wubba Lubba Dub Dub!_
+
+[Captura de pantalla](https://github.com/mariaozamiz/rick-and-morty-character-cards/blob/master/src/images/rickymorty.jpg?raw=true)
+
 
 ## Tecnologías utilizadas ⚙️
 
-Este proyecto ha sido realizado con React (hooks, router) y CSS (Sass). 
+Este proyecto ha sido realizado con React (hooks, router) y CSS (Sass).
+
 
 ## Características generales 📋
 
@@ -22,6 +27,7 @@ Este proyecto ha sido realizado con React (hooks, router) y CSS (Sass).
 - Situándonos en el campo de texto, el navegador no cambiará de ruta si se pulsa la tecla intro
 - La URL del detalle de personaje es compartible: si visitamos esa URL directamente en el navegador se mostrará el detalle del personaje.
 - Si naveguemos a una URL inexistente, saldrá el mensaje de aviso "Personaje no encontrado".
+
 
 ### Pintado de resultados 🥒
 
