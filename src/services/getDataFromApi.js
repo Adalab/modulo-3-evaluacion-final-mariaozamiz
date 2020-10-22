@@ -7,17 +7,19 @@ const getDataFromApi = () => {
         })
         .then((response) => response.json())
         .then((data) => {
-            return data.results.map((character) => {
-                return {
-                    id: character.id,
-                    imageUrl: character.image,
-                    name: character.name,
-                    species: character.species,
-                    origin: character.origin,
-                    status: character.status,
-                    episodes: character.episode,
-                };
-            });
+            return data.results
+                .sort((a, b) => (a.name > b.name ? 1 : -1))
+                .map((character) => {
+                    return {
+                        id: character.id,
+                        imageUrl: character.image,
+                        name: character.name,
+                        species: character.species,
+                        origin: character.origin,
+                        status: character.status,
+                        episodes: character.episode,
+                    };
+                });
         });
 };
 

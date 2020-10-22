@@ -11,7 +11,6 @@ import './app.scss';
 function App() {
     const [characters, setCharacters] = useState([]);
     const [filterName, setFilterName] = useState('');
-    const [filterSpecies, setFilterSpecies] = useState([]);
 
     useEffect(() => {
         getDataFromApi().then((data) => {
