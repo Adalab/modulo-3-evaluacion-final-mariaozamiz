@@ -17,7 +17,7 @@ _Wubba Lubba Dub Dub!_
 ## Tecnologías utilizadas
 
 - React (hooks, router) y CSS (Sass).
-- ⚠️ La página aún no está adaptada a dispositivos móviles.
+
 
 ## Características generales
 
@@ -45,7 +45,7 @@ _Wubba Lubba Dub Dub!_
 - Un archivo JSON actúa como respaldo por si la primera llamada fallase.
 - Tras la respuesta, se filtran los datos realmente necesarios y éstos se ordenan alfabéticamente.
 
-```
+```javascript
 const getDataFromApi = () => {
     return fetch('https://rickandmortyapi.com/api/character/')
         .catch(() => {
