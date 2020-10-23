@@ -7,7 +7,7 @@ _Wubba Lubba Dub Dub!_
 ![Captura de pantalla](https://github.com/mariaozamiz/rick-and-morty-character-cards/blob/master/src/images/rickymorty.jpg?raw=true)
 
 
-## Instalación 🔧
+## Instalación
 
 1. Descarga el repositorio.
 2. Instala las dependencias con ```npm install```.
@@ -40,10 +40,10 @@ _Wubba Lubba Dub Dub!_
 
 -  Tanto el listado inicial de personajes como aquellos resultado de una búsqueda se presentan ordenados alfabéticamente.
 
-### API 📋
+### Petición a la API 📋
 
-- Una segunda API actúa como respaldo por si la primera fallase.
-- Los datos necesarios tienen un primer filtrado en este paso y se ordenan alfabéticamente.
+- Un archivo JSON actúa como respaldo por si la primera llamada fallase.
+- Tras la respuesta, se filtran los datos realmente necesarios y éstos se ordenan alfabéticamente.
 
 ```
 const getDataFromApi = () => {
@@ -70,3 +70,10 @@ const getDataFromApi = () => {
                 });
         });
 };
+```
+
+
+## Roadmap
+
+- ⚠️ La página aún no está totalmente adaptada a dispositivos móviles.
+
