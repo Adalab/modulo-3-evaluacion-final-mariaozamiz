@@ -12,7 +12,6 @@ function CharacterList(props) {
     }
 
     const charactersInfo = props.characters
-        // .sort((a, b) => (a.name > b.name ? 1 : -1))
         .map((character) => {
             return (
                 <li key={character.id} className="character-card">
