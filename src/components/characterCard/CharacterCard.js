@@ -13,6 +13,7 @@ function CharacterCard(props) {
                     className="character-card__image"
                     src={props.imageUrl}
                     alt={`${props.name}'s pic`}
+                    loading="eager"
                 ></img>
                 <div className="character-card__info">
                     <h1 className="character-card__name">{props.name}</h1>
