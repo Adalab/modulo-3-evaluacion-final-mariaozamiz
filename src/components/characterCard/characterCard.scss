@@ -31,6 +31,7 @@
         font-family: $font-basic;
         color: $color-light;
         font-size: $m;
+        align-self: center;
 
         @include tablet {
             font-size: $xl;
