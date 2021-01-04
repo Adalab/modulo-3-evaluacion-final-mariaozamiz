@@ -80,4 +80,4 @@ const getDataFromApi = () => {
 
 ## Demo
 
-![Demo](https://github.com/mariaozamiz/rick-and-morty-character-cards/blob/master/src/images/ricky_morty_demo.gif)
+![Demo](https://github.com/mariaozamiz/rick-and-morty-character-cards/blob/master/src/images/rick_morty_demo.gif?raw=true)
