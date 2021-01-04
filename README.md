@@ -75,5 +75,9 @@ const getDataFromApi = () => {
 
 ## Roadmap
 
-- ⚠️ La página aún no está totalmente adaptada a dispositivos móviles.
+- Adaptar ventanas modales a dispositivos móviles.
 
+
+## Demo
+
+![Demo](https://github.com/mariaozamiz/rick-and-morty-character-cards/blob/master/src/images/ricky_morty_demo.gif)
